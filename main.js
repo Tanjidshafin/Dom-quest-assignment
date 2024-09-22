@@ -96,3 +96,7 @@ document.getElementById("donateNowQuota").addEventListener("click", function () 
 
 })
 
+document.getElementById("blogBtn").addEventListener("click", function () {
+window.location.href="https://tanjidshafin.github.io/Dom-quest-assignment/blog.html"
+})
+

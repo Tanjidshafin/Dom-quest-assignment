@@ -11,3 +11,4 @@ function moneyDecreaser(inputId) {
     let calculation = typeOfBalance - typeOfamount
     document.getElementById("availableBalance").innerText = calculation.toString()
 }
+
