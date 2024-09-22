@@ -24,6 +24,7 @@ donationPage.addEventListener("click", function () {
 let i = 1
 document.getElementById("donateNowNoakhali").addEventListener("click", function () {
     if (document.getElementById("inputAmountNoakhali").value != "" && parseFloat(document.getElementById("inputAmountNoakhali").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountNoakhali").value))) {
+        my_modal_5.showModal()
         moneyDecreaser("inputAmountNoakhali")
 
         if (!i < 2) {
@@ -47,7 +48,8 @@ document.getElementById("donateNowNoakhali").addEventListener("click", function 
 
 })
 document.getElementById("donateNowFeni").addEventListener("click", function () {
-    if (document.getElementById("inputAmountFeni").value != "") {
+    if (document.getElementById("inputAmountNoakhali").value != "" && parseFloat(document.getElementById("inputAmountNoakhali").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountNoakhali").value))) {
+        my_modal_5.showModal()
         moneyDecreaser("inputAmountFeni")
         if (!i < 2) {
             document.getElementById("id404").style.display = "none"
@@ -55,7 +57,7 @@ document.getElementById("donateNowFeni").addEventListener("click", function () {
             div.innerHTML = `
         <div class="mx-3 p-5 my-5 border border-gray-200 rounded-xl">
                             <p class="font-semibold text-lg mb-3">${document.getElementById("inputAmountFeni").value} Taka is Donated for Flood Relief in Feni, Bangladesh</p>
-                            <p class="font-semibold text-gray-400">Real Time</p>
+                            <p class="font-semibold text-gray-400">Donated on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()} GMT+0600 (Bangladesh Standard Time)</p>
                         </div>
         `
             document.getElementById("historyWeb").appendChild(div)
@@ -71,7 +73,8 @@ document.getElementById("donateNowFeni").addEventListener("click", function () {
 
 })
 document.getElementById("donateNowQuota").addEventListener("click", function () {
-    if (document.getElementById("inputAmountQuota").value != "") {
+    if (document.getElementById("inputAmountNoakhali").value != "" && parseFloat(document.getElementById("inputAmountNoakhali").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountNoakhali").value))) {
+        my_modal_5.showModal()
         moneyDecreaser("inputAmountQuota")
         if (!i < 2) {
             document.getElementById("id404").style.display = "none"
@@ -79,7 +82,7 @@ document.getElementById("donateNowQuota").addEventListener("click", function () 
             div.innerHTML = `
         <div class="mx-3 p-5 my-5 border border-gray-200 rounded-xl">
                             <p class="font-semibold text-lg mb-3">${document.getElementById("inputAmountQuota").value} Taka is Donated for Injured in the Quota movement</p>
-                            <p class="font-semibold text-gray-400">Real Time</p>
+                            <p class="font-semibold text-gray-400">Donated on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()} GMT+0600 (Bangladesh Standard Time)</p>
                         </div>
         `
             document.getElementById("historyWeb").appendChild(div)
@@ -97,6 +100,6 @@ document.getElementById("donateNowQuota").addEventListener("click", function () 
 })
 
 document.getElementById("blogBtn").addEventListener("click", function () {
-window.location.href="https://tanjidshafin.github.io/Dom-quest-assignment/blog.html"
+    window.location.href = "https://tanjidshafin.github.io/Dom-quest-assignment/blog.html"
 })
 
