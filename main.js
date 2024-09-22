@@ -23,7 +23,7 @@ donationPage.addEventListener("click", function () {
 })
 let i = 1
 document.getElementById("donateNowNoakhali").addEventListener("click", function () {
-    if (document.getElementById("inputAmountNoakhali").value != "") {
+    if (document.getElementById("inputAmountNoakhali").value != "" && parseFloat(document.getElementById("inputAmountNoakhali").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountNoakhali").value))) {
         moneyDecreaser("inputAmountNoakhali")
 
         if (!i < 2) {
@@ -32,7 +32,7 @@ document.getElementById("donateNowNoakhali").addEventListener("click", function 
             div.innerHTML = `
     <div class="mx-3 p-5 my-5 border border-gray-200 rounded-xl">
                         <p class="font-semibold text-lg mb-3">${document.getElementById("inputAmountNoakhali").value} Taka is Donated for Flood at Noakhali, Bangladesh</p>
-                        <p class="font-semibold text-gray-400">Real Time</p>
+                        <p class="font-semibold text-gray-400">Donated on ${new Date().toLocaleDateString()} at ${new Date().toLocaleTimeString()} GMT+0600 (Bangladesh Standard Time)</p>
                     </div>
     `
             document.getElementById("historyWeb").appendChild(div)
@@ -42,7 +42,7 @@ document.getElementById("donateNowNoakhali").addEventListener("click", function 
         }
     }
     else {
-        alert("Enter Proper Amount")
+        alert("Invalid Amount")
     }
 
 })
@@ -88,7 +88,7 @@ document.getElementById("donateNowQuota").addEventListener("click", function () 
             document.getElementById("inputAmountQuota").value = ""
         }
     }
-    else{
+    else {
         alert("Enter Proper Amount")
     }
 
