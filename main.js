@@ -48,7 +48,7 @@ document.getElementById("donateNowNoakhali").addEventListener("click", function 
 
 })
 document.getElementById("donateNowFeni").addEventListener("click", function () {
-    if (document.getElementById("inputAmountNoakhali").value != "" && parseFloat(document.getElementById("inputAmountNoakhali").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountNoakhali").value))) {
+    if (document.getElementById("inputAmountFeni").value != "" && parseFloat(document.getElementById("inputAmountFeni").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountFeni").value))) {
         my_modal_5.showModal()
         moneyDecreaser("inputAmountFeni")
         if (!i < 2) {
@@ -73,7 +73,7 @@ document.getElementById("donateNowFeni").addEventListener("click", function () {
 
 })
 document.getElementById("donateNowQuota").addEventListener("click", function () {
-    if (document.getElementById("inputAmountNoakhali").value != "" && parseFloat(document.getElementById("inputAmountNoakhali").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountNoakhali").value))) {
+    if (document.getElementById("inputAmountQuota").value != "" && parseFloat(document.getElementById("inputAmountQuota").value) <= parseFloat(document.getElementById("availableBalance").innerText) && !isNaN(parseFloat(document.getElementById("inputAmountQuota").value))) {
         my_modal_5.showModal()
         moneyDecreaser("inputAmountQuota")
         if (!i < 2) {
