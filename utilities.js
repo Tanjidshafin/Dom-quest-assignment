@@ -1,5 +1,5 @@
 
-function moneyIncreaser(inputGivenSource,inputId) {
+function moneyIncreaser(inputGivenSource, inputId) {
     let typeOfBalance = parseFloat(document.getElementById(inputGivenSource).innerText)
     let typeOfamount = parseFloat(document.getElementById(inputId).value)
     let calculation = typeOfBalance + typeOfamount

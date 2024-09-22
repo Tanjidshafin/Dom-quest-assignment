@@ -23,11 +23,11 @@
             <header>
 
                 <nav class="py-4 pb-7 bg-white/80
-                backdrop-blur-md shadow-md w-full
+                backdrop-blur-lg shadow-md w-full
                 fixed top-0 left-0 right-0 z-10">
                     <div class="flex justify-around container mx-auto">
 
-                        <div class="hidden lg:block">
+                        <div class="flex order-3 lg:order-none">
                             <button class="btn bg-[#B4F461] px-7">Blog</button>
                         </div>
 
@@ -36,16 +36,16 @@
                             <a class="cursor-pointer btn bg-transparent border-transparent">
                                 <h3 class="text-sm lg:text-xl flex items-center gap-3 font-semibold">
                                     <img width="30px" class="object-cover" src="assets/logo.png"
-                                        alt="Store Logo"><span>Donate Bangladesh</span>
+                                        alt="Store Logo"><span class="hidden lg:block">Donate Bangladesh</span>
                                 </h3>
                             </a>
                         </div>
                         <div class="flex items-center mr-4">
 
-                            <a class="flex items-center gap-2 font-semibold text-gray-500 hover:text-[#B4F461]
+                            <a class="flex lg:bg-transparent bg-gray-100 p-3 rounded-lg items-center gap-2 font-semibold text-gray-500 hover:text-[#B4F461]
         cursor-pointer transition-colors duration-300">
 
-                                <img width="30px" src="assets/coin.png" alt="coin">
+                                <img width="20px" src="assets/coin.png" alt="coin">
                                 <span id="availableBalance">55000</span>
                                 <span>BDT</span>
                             </a>
